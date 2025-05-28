@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  /* ### Primary */
+
+  --primary-blue: hsl(231, 69%, 60%);
+  --primary-red: hsl(0, 94%, 66%);
+
+  /* ### Neutral */
+
+  --main-bg: hsl(0, 0%, 97%);
+  --accent-color: hsl(229, 31%, 21%);
+}
+
+@layer base {
+  html {
+    font-size: clamp(0.8em, 0.4em + 1vw, 1.6em);
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-size: 1.1rem;
+    font-family: "Rubik", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    background: var(--main-bg);
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+}
+
+@theme {
+}
