@@ -1,5 +1,127 @@
+import Card from "./components/Card";
+import TextBox from "./components/TextBox";
+
 function App() {
-  return <div></div>;
+  return (
+    <main className="site-padding">
+      <header className="header ">
+        <nav className="navigation">
+          <figure>
+            <img src="/images/logo-bookmark.svg" alt="bookmark site logo" />
+          </figure>
+          <button type="button" aria-label="mobile menu button">
+            <img src="/images/icon-hamburger.svg" alt="hamburger icon" />
+          </button>
+        </nav>
+        <section className="hero ">
+          <div className="wrapper">
+            <figure className="preview-1">
+              <img
+                src="/images/illustration-hero.svg"
+                alt="blurred preview of the extension"
+              />
+            </figure>
+          </div>
+          <article className="flex flex-col gap-8">
+            <h1 className="text-3xl">A Simple Bookmark Manager</h1>
+            <p className="text-(--text-color)">
+              A clean and simple interface to organize your favourite website.
+              Open a new browser tab and see your sites load instantly. Try it
+              for free.
+            </p>
+            <div className="flex gap-5 items-center justify-center md:justify-start">
+              <button className="btn-main" type="button">
+                Get it on Chrome
+              </button>
+              <button className="btn-secondary" type="button">
+                Get it on Firefox
+              </button>
+            </div>
+          </article>
+        </section>
+      </header>
+      <section className="site-block-margin">
+        <TextBox styles="mt-15">
+          <TextBox.title>Features</TextBox.title>
+          <TextBox.text>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </TextBox.text>
+        </TextBox>
+        <ul className=" features">
+          <li className="active">Simple Bookmarking</li>
+          <li>Speedy Searching</li>
+          <li> Easy Sharing</li>
+        </ul>
+        <div className="wrapper py-10">
+          <figure className="preview-2">
+            <img
+              src="/images/illustration-features-tab-1.svg"
+              alt="blurred preview of the functionality"
+            />
+          </figure>
+        </div>
+        <TextBox styles="mt-15">
+          <TextBox.title styles="text-[1.8rem] ">
+            Bookmark in one click
+          </TextBox.title>
+          <TextBox.text>
+            Organize your bookmarks however you like. Our simple drag-and-drop
+            interface gives you complete control over how you manage your
+            favourite sites.
+          </TextBox.text>
+        </TextBox>
+      </section>
+      <section className="site-block-margin flex flex-col gap-10">
+        <TextBox styles="">
+          <TextBox.title>Download the extension</TextBox.title>
+          <TextBox.text>
+            We've got more browsers in the pipeline. Please do let us know if
+            you've got a favourite you'd like us to prioritize.
+          </TextBox.text>
+        </TextBox>
+        <Card>
+          <Card.image src={"chrome"} />
+          <TextBox>
+            <TextBox.title>Add to Chrome</TextBox.title>
+            <TextBox.text>Minimum version 62</TextBox.text>
+          </TextBox>
+          <Card.divider />
+          <Card.btn />
+        </Card>
+        <Card>
+          <Card.image src={"firefox"} />
+          <TextBox>
+            <TextBox.title>Add to Firefox</TextBox.title>
+            <TextBox.text>Minimum version 55</TextBox.text>
+          </TextBox>
+          <Card.divider />
+          <Card.btn />
+        </Card>
+        <Card>
+          <Card.image src={"opera"} />
+          <TextBox>
+            <TextBox.title>Add to Opera</TextBox.title>
+            <TextBox.text>Minimum version 46</TextBox.text>
+          </TextBox>
+          <Card.divider />
+          <Card.btn />
+        </Card>
+      </section>
+      <section>
+        <TextBox>
+          <TextBox.title styles="text-[2rem]">
+            Frequently Asked Questions
+          </TextBox.title>
+          <TextBox.text>
+            Here are some of our FAQs. If you have any other questions you'd
+            like answered please feel free to email us.
+          </TextBox.text>
+        </TextBox>
+      </section>
+    </main>
+  );
 }
 
 export default App;
@@ -10,28 +132,6 @@ export default App;
   Pricing
   Contact
   Login
-
-  A Simple Bookmark Manager
-
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
-
-  Get it on Chrome
-  Get it on Firefox
-
-  Features
-
-  Our aim is to make it quick and easy for you to access your favourite websites. 
-  Your bookmarks sync between your devices so you can access them on the go.
-
-  Simple Bookmarking
-  Speedy Searching
-  Easy Sharing
-
-  Bookmark in one click
-
-  Organize your bookmarks however you like. Our simple drag-and-drop interface 
-  gives you complete control over how you manage your favourite sites.
 
   More Info
 
