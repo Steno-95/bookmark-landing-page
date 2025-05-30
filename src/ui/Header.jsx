@@ -1,4 +1,4 @@
-import TextBox from "./TextBox";
+import TextBox from "../components/TextBox";
 
 function Header() {
   return (
@@ -25,7 +25,6 @@ function Header() {
             A Simple Bookmark Manager
           </TextBox.title>
           <TextBox.text>
-            {" "}
             A clean and simple interface to organize your favourite website.
             Open a new browser tab and see your sites load instantly. Try it for
             free.
