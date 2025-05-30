@@ -20,7 +20,7 @@ function Header() {
             />
           </figure>
         </div>
-        <TextBox styles="gap-8!">
+        <TextBox>
           <TextBox.title styles="text-3xl">
             A Simple Bookmark Manager
           </TextBox.title>
