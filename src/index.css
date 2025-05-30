@@ -58,7 +58,7 @@
 
 @layer components {
   .header {
-    @apply flex flex-col gap-10 min-h-screen mb-35;
+    @apply flex flex-col gap-10 min-h-screen mb-35 md:min-h-fit;
   }
 
   .navigation {
@@ -103,13 +103,14 @@
     bottom: -2.5rem;
     left: -2rem;
     border-bottom-right-radius: 30%;
+    border-top-right-radius: 30%;
   }
 
   .features {
-    @apply flex flex-col gap-2 border-y-1 border-y-(--text-color)/40 my-12;
+    @apply flex flex-col gap-2 border-y-1 border-y-(--text-color)/40 my-12 md:flex-row md:items-center md:justify-center md:gap-10 md:border-t-0;
 
     & li {
-      @apply py-4 not-last:border-b-1 border-b-(--text-color)/40 cursor-pointer;
+      @apply py-4 not-last:border-b-1 border-b-(--text-color)/40 cursor-pointer md:border-none md:px-8;
     }
   }
 
@@ -118,7 +119,7 @@
 
     &::after {
       content: "";
-      @apply bg-(--primary-red) w-[40%] h-1.5 absolute bottom-0 left-1/2 -translate-x-1/2;
+      @apply bg-(--primary-red) w-[40%] h-1.5 absolute bottom-0 left-1/2 -translate-x-1/2 md:w-full;
     }
   }
 
@@ -139,6 +140,10 @@
   }
   .text-box {
     @apply flex flex-col gap-5;
+  }
+
+  .flex-rev {
+    @apply md:flex md:flex-row-reverse;
   }
 }
 
