@@ -44,6 +44,16 @@
   h6 {
     @apply text-(--accent-color) font-semibold;
   }
+
+  section details {
+    @apply w-full  py-2 block border-b-1 border-b-(--text-color)/40  first-of-type:mt-10 text-start;
+    & summary {
+      @apply w-full text-start appearance-auto cursor-pointer py-5 flex items-center justify-between text-(--accent-color) font-medium stroke-(--primary-blue);
+    }
+  }
+  section details[open] summary span .svg {
+    @apply rotate-180 stroke-(--primary-red);
+  }
 }
 
 @layer components {
