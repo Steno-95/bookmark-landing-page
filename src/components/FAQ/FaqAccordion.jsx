@@ -3,7 +3,7 @@ import TextBox from "../TextBox";
 
 function FaqAccordion() {
   return (
-    <section className="site-block-margin">
+    <section className="site-block-margin md:max-w-[40rem] md:mx-auto">
       <TextBox>
         <TextBox.title styles="text-[2rem]">
           Frequently Asked Questions
