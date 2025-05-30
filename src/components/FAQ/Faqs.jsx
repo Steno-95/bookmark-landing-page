@@ -5,7 +5,7 @@ function Faqs({ children }) {
 function Title({ children }) {
   return (
     <summary>
-      {children}{" "}
+      {children}
       <span>
         {/* <img src="/images/icon-arrow.svg" alt="arrow icon" /> */}
         <svg
