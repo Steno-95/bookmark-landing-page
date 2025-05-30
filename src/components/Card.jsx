@@ -12,7 +12,7 @@ function CardImage({ src, styles = "" }) {
 
 function CardDivider() {
   return (
-    <figure className="w-[125%]">
+    <figure className="w-full">
       <img src="/images/bg-dots.svg" alt="a line of separated dots" />
     </figure>
   );
