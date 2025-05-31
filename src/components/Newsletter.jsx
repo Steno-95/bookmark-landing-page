@@ -21,7 +21,7 @@ function Newsletter() {
             id="email"
             placeholder="Enter your email address"
             autoComplete="email"
-            className="bg-white px-2 py-3 rounded-md w-fit"
+            className="email-field"
           />
           <button type="button" className="action-btn">
             Contact Us
