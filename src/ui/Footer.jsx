@@ -22,7 +22,7 @@ function Footer() {
         </ul>
       </div>
       <ul className="flex gap-10 items-center">
-        <li className="footer-icon">
+        <li className="footer-icon" tabIndex={0}>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path
               fill="currentColor"
@@ -31,7 +31,7 @@ function Footer() {
             />
           </svg>
         </li>
-        <li className="footer-icon">
+        <li className="footer-icon" tabIndex={0}>
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
             <path
               fill="#currentColor"
