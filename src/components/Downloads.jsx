@@ -13,7 +13,7 @@ function Downloads() {
           you've got a favourite you'd like us to prioritize.
         </TextBox.text>
       </TextBox>
-      <article className="flex flex-col gap-15 lg:flex-row lg:flex-wrap lg:gap-10 ">
+      <article className="flex flex-col gap-15 lg:flex-row lg:flex-wrap lg:gap-10 xl:gap-5">
         <Card styles="xl:-translate-y-10">
           <Card.image src={"chrome"} />
           <TextBox styles="gap-2!">

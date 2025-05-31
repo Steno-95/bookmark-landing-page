@@ -1,5 +1,5 @@
 function TextBox({ children, styles = "" }) {
-  return <article className={`text-box ${styles}`}>{children}</article>;
+  return <article className={`text-box  ${styles} `}>{children}</article>;
 }
 
 function Title({ children, styles = "" }) {
@@ -7,7 +7,7 @@ function Title({ children, styles = "" }) {
 }
 
 function Text({ children, styles = "" }) {
-  return <p className={`${styles}`}>{children}</p>;
+  return <p className={`text-[1rem] ${styles}`}>{children}</p>;
 }
 
 TextBox.title = Title;

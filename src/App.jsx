@@ -9,7 +9,7 @@ import Footer from "./ui/Footer";
 function App() {
   return (
     <>
-      <main className="site-padding">
+      <main className="site-padding ">
         <Header />
         <Features />
         <Downloads />
