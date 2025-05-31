@@ -2,27 +2,32 @@ import TextBox from "./TextBox";
 
 function Newsletter() {
   return (
-    <section className="p-10 bg-(--primary-blue) text-center">
-      <TextBox styles="text-white p-5">
-        <TextBox.text styles="uppercase tracking-[.2em] text-sm">
-          35.000+ already joined{" "}
-        </TextBox.text>
-        <TextBox.title styles="text-white text-[1.5rem]">
-          Stay up-to-date with what we're doing
-        </TextBox.title>
-      </TextBox>
-      <form className="flex flex-col items-center justify-center gap-5">
-        <label className="opacity-0">Enter your email address</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="Enter your email address"
-          className="bg-white px-2 py-3 rounded-md w-full"
-        />
-        <button type="button" className="btn-main bg-(--primary-red) w-full">
-          Contact Us
-        </button>
-      </form>
+    <section className="p-10 bg-(--primary-blue) " id="contact">
+      <div className="text-center md:max-w-[35rem] md:mx-auto flex flex-col items-center">
+        <TextBox styles="text-white p-5 max-w-[30rem]">
+          <TextBox.text styles="uppercase tracking-[.2em] text-sm">
+            35.000+ already joined{" "}
+          </TextBox.text>
+          <TextBox.title styles="text-white text-[1.5rem]">
+            Stay up-to-date with what we're doing
+          </TextBox.title>
+        </TextBox>
+        <form className="flex flex-col items-center justify-center gap-5 md:flex-row">
+          <label htmlFor="email" className="opacity-0 md:absolute -z-10">
+            Enter your email address
+          </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email address"
+            autoComplete="email"
+            className="bg-white px-2 py-3 rounded-md w-fit"
+          />
+          <button type="button" className="action-btn">
+            Contact Us
+          </button>
+        </form>
+      </div>
     </section>
   );
 }

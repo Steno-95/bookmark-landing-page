@@ -12,14 +12,18 @@ function CardImage({ src, styles = "" }) {
 
 function CardDivider() {
   return (
-    <figure className="w-[125%]">
+    <figure className="w-full">
       <img src="/images/bg-dots.svg" alt="a line of separated dots" />
     </figure>
   );
 }
 
 function CardBtn() {
-  return <button className="btn-main w-full">Add & Install Extension</button>;
+  return (
+    <button className="btn-main hover-btn w-full">
+      Add & Install Extension
+    </button>
+  );
 }
 
 Card.image = CardImage;
