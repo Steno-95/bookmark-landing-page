@@ -1,13 +1,11 @@
+import Logo from "./Logo";
+
 function Footer() {
   return (
-    <footer className="bg-(--accent-color) flex flex-col items-center justify-center gap-8 py-10 md:flex-row md:justify-between md:px-10">
+    <footer className="bg-(--accent-color) flex flex-col items-center justify-center gap-8 py-10 md:flex-row md:justify-between md:px-10 lg:px-20 lg:py-5 ">
       <div className="flex flex-col gap-8 md:flex-row md:items-center">
         <figure>
-          <img
-            src="/images/logo-bookmark-footer.svg"
-            alt="bookmark site logo"
-            className="w-35 h-7"
-          />
+          <Logo />
         </figure>
         <ul className="flex flex-col gap-5 text-(--main-bg) uppercase text-[1rem] font-light items-center tracking-[0.2em] md:flex-row xl:text-[.8rem]">
           <li className="hover:text-(--primary-red)">

@@ -1,21 +1,32 @@
 import TextBox from "../components/TextBox";
 import useScreenSize from "../hooks/useScreenSize";
 
-function Header() {
+function Header({ isMobileOpen, onClick }) {
   const isMobile = useScreenSize();
   return (
     <header className="header ">
       <nav className="navigation">
         <figure>
-          <img
-            src="/images/logo-bookmark.svg"
-            alt="bookmark site logo"
-            className="2xl:h-8 2xl:w-42"
-          />
+          {!isMobileOpen && (
+            <img
+              src="/images/logo-bookmark.svg"
+              alt="bookmark site logo"
+              className="2xl:h-8 2xl:w-45"
+            />
+          )}
         </figure>
-        {isMobile && (
-          <button type="button" aria-label="mobile menu button">
-            <img src="/images/icon-hamburger.svg" alt="hamburger icon" />
+        {isMobile && !isMobileOpen && (
+          <button
+            type="button"
+            aria-label="mobile menu button"
+            onClick={onClick}
+            className="border-0 -mr-2"
+          >
+            <img
+              src="/images/icon-hamburger.svg"
+              alt="hamburger icon"
+              className="size-5"
+            />
           </button>
         )}
         {!isMobile && (
