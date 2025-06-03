@@ -71,7 +71,7 @@
   }
 
   .navigation {
-    @apply flex justify-between items-center mb-8;
+    @apply flex justify-between items-center mb-8 pt-2;
   }
 
   .hero {
@@ -86,7 +86,7 @@
     @apply hover:border-(--primary-blue) hover:text-(--primary-blue) hover:bg-(--secondary-bg) focus:border-(--primary-blue) focus:text-(--primary-blue) focus:bg-(--secondary-bg) focus:outline-none;
   }
   .action-btn {
-    @apply bg-(--primary-red) text-white border-(--primary-red) hover:text-(--primary-red) hover:bg-(--secondary-bg) focus:text-(--primary-red) focus:bg-(--secondary-bg) w-fit focus:outline-none;
+    @apply bg-(--primary-red) text-white border-(--primary-red) hover:text-(--primary-red) hover:bg-(--secondary-bg) focus:text-(--primary-red) focus:bg-(--secondary-bg) md:w-fit focus:outline-none w-full;
   }
 
   .btn-secondary {
@@ -157,6 +157,12 @@
   .footer-icon {
     @apply hover:text-(--primary-red) cursor-pointer text-white fill-white hover:fill-(--primary-red) focus:text-(--primary-red) focus:fill-(--primary-red) focus:outline-none;
   }
+
+  /* MOBILE MENU*/
+
+  .mobile-link {
+    @apply py-5 border-t-1 border-t-(--text-color)/70 tracking-[.15em] cursor-pointer;
+  }
 }
 
 @layer utilities {
@@ -164,7 +170,7 @@
     @apply w-full h-full;
   }
   .site-padding {
-    @apply px-8 py-5 text-center md:px-20 md:py-12 overflow-x-hidden lg:px-30 lg:py-15 xl:px-40 xl:py-18;
+    @apply px-8 py-5 text-center md:px-20 md:py-12 overflow-x-hidden lg:px-30 lg:py-15 xl:px-40 xl:py-18 xl:pb-0;
   }
   .site-block-margin {
     @apply my-35;
