@@ -18,7 +18,7 @@ function Downloads() {
           <Card.image src={"chrome"} />
           <TextBox styles="gap-2!">
             <TextBox.title styles="text-[1.5rem]">Add to Chrome</TextBox.title>
-            <TextBox.text styles="text-[1rem]">Minimum version 62</TextBox.text>
+            <TextBox.text>Minimum version 62</TextBox.text>
           </TextBox>
           <Card.divider />
           <Card.btn />
@@ -27,7 +27,7 @@ function Downloads() {
           <Card.image src={"firefox"} />
           <TextBox styles="gap-2!">
             <TextBox.title styles="text-[1.5rem]">Add to Firefox</TextBox.title>
-            <TextBox.text styles="text-[1rem]">Minimum version 55</TextBox.text>
+            <TextBox.text>Minimum version 55</TextBox.text>
           </TextBox>
           <Card.divider />
           <Card.btn />
@@ -36,7 +36,7 @@ function Downloads() {
           <Card.image src={"opera"} />
           <TextBox styles="gap-2!">
             <TextBox.title styles="text-[1.5rem]">Add to Opera</TextBox.title>
-            <TextBox.text styles="text-[1rem]">Minimum version 46</TextBox.text>
+            <TextBox.text>Minimum version 46</TextBox.text>
           </TextBox>
           <Card.divider />
           <Card.btn />

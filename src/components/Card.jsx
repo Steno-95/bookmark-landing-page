@@ -20,7 +20,7 @@ function CardDivider() {
 
 function CardBtn() {
   return (
-    <button className="btn-main hover-btn w-full">
+    <button className="btn-main hover-btn w-full" type="button">
       Add & Install Extension
     </button>
   );

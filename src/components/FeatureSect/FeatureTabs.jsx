@@ -4,7 +4,7 @@ import TextBox from "../TextBox";
 function FeatureTabs({ content }) {
   const isMobile = useScreenSize();
   return (
-    <div className="md:flex md:gap-10 lg:gap-20">
+    <article className="md:flex md:gap-10 lg:gap-20">
       <div className="wrapper py-10 md:basis-1/2">
         <figure className="preview-2">
           <img
@@ -19,7 +19,7 @@ function FeatureTabs({ content }) {
         <TextBox.text>{content.text}</TextBox.text>
         {!isMobile && <button className="btn-main">More Info</button>}
       </TextBox>
-    </div>
+    </article>
   );
 }
 

@@ -44,7 +44,9 @@ function FaqAccordion() {
           non ut velit.
         </Faqs.details>
       </Faqs>
-      <button className="btn-main px-8 py-4">More Info</button>
+      <button className="btn-main px-8 py-4" type="button">
+        More Info
+      </button>
     </section>
   );
 }

@@ -29,6 +29,7 @@ function Features() {
         >
           <button
             className="border-none outline-none p-0"
+            type="button"
             onKeyDown={(e) =>
               [" ", "Enter"].includes(e.key) && setActiveTab("1")
             }
@@ -44,6 +45,7 @@ function Features() {
         >
           <button
             className="border-none outline-none p-0"
+            type="button"
             onKeyDown={(e) =>
               [" ", "Enter"].includes(e.key) && setActiveTab("2")
             }
@@ -59,6 +61,7 @@ function Features() {
         >
           <button
             className="border-none outline-none p-0"
+            type="button"
             onKeyDown={(e) =>
               [" ", "Enter"].includes(e.key) && setActiveTab("3")
             }

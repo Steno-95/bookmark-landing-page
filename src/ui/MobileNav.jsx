@@ -3,7 +3,7 @@ import SocialLinks from "./SocialLinks";
 
 function MobileNav({ onClick }) {
   return (
-    <div className="p-8 fixed bg-(--accent-color)/95 min-h-screen w-full top-0 left-0 z-20 flex flex-col justify-between">
+    <aside className="p-8 fixed bg-(--accent-color)/95 min-h-screen w-full top-0 left-0 z-20 flex flex-col justify-between">
       <nav className="flex flex-col gap-15">
         <figure className="flex justify-between">
           <Logo circle="#fff" icon="hsl(229, 31%, 21%)" />
@@ -31,7 +31,10 @@ function MobileNav({ onClick }) {
             <a>contact</a>
           </li>
           <li className="mobile-link">
-            <button className="border-2 border-white rounded-md text-[1.5rem] uppercase w-full py-3 mt-4 text-white font-medium tracking-[.2em]">
+            <button
+              type="button"
+              className="border-2 border-white rounded-md text-[1.5rem] uppercase w-full py-3 mt-4 text-white font-medium tracking-[.2em]"
+            >
               login
             </button>
           </li>
@@ -40,7 +43,7 @@ function MobileNav({ onClick }) {
       <ul className="flex gap-15 items-center justify-center">
         <SocialLinks />
       </ul>
-    </div>
+    </aside>
   );
 }
 

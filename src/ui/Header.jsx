@@ -5,7 +5,7 @@ function Header({ isMobileOpen, onClick }) {
   const isMobile = useScreenSize();
   return (
     <header className="header ">
-      <nav className="navigation">
+      <nav className="navigation" aria-label="header navigation">
         <figure>
           {!isMobileOpen && (
             <img
@@ -41,7 +41,10 @@ function Header({ isMobileOpen, onClick }) {
               <a href="#contact">contact</a>
             </li>
             <li>
-              <button className="action-btn uppercase p-0 pt-2 pb-1 px-6">
+              <button
+                type="button"
+                className="action-btn uppercase p-0 pt-2 pb-1 px-6"
+              >
                 login
               </button>
             </li>
@@ -59,9 +62,7 @@ function Header({ isMobileOpen, onClick }) {
           </figure>
         </div>
         <TextBox styles="md:basis-1/2 lg:self-center ">
-          <TextBox.title styles="text-3xl">
-            A Simple Bookmark Manager
-          </TextBox.title>
+          <h1 styles="text-3xl">A Simple Bookmark Manager</h1>
           <TextBox.text>
             A clean and simple interface to organize your favourite website.
             Open a new browser tab and see your sites load instantly. Try it for
