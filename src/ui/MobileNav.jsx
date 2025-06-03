@@ -21,7 +21,7 @@ function MobileNav({ onClick }) {
         </figure>
         <ul className=" uppercase text-white/70 w-full text-center text-[1.5rem]">
           <li className="mobile-link">
-            <a>features</a>
+            <a href="#features">features</a>
           </li>
           <li className="mobile-link">
             <a>pricing</a>
@@ -37,7 +37,7 @@ function MobileNav({ onClick }) {
         </ul>
       </nav>
       <ul className="flex gap-15 items-center justify-center">
-        <li className="footer-icon" tabIndex={0}>
+        <li className="footer-icon" tabIndex={0} aria-label="facebook link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
             <path
               fill="currentColor"
@@ -46,7 +46,7 @@ function MobileNav({ onClick }) {
             />
           </svg>
         </li>
-        <li className="footer-icon" tabIndex={0}>
+        <li className="footer-icon" tabIndex={0} aria-label="twitter link">
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20">
             <path
               fill="currentColor"
