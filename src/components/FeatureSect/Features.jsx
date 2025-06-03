@@ -20,30 +20,51 @@ function Features() {
           them on the go.
         </TextBox.text>
       </TextBox>
-      <ul className=" features :" onClick={handleClick}>
+      <ul className=" features" onClick={handleClick}>
         <li
-          className={`hover:text-(--primary-red) ${
+          className={`hover:text-(--primary-red) focus-within:text-(--primary-red) ${
             activeTab === "1" && "active"
           }`}
           data-active="1"
         >
-          Simple Bookmarking
+          <button
+            className="border-none outline-none p-0"
+            onKeyDown={(e) =>
+              [" ", "Enter"].includes(e.key) && setActiveTab("1")
+            }
+          >
+            Simple Bookmarking
+          </button>
         </li>
         <li
-          className={`hover:text-(--primary-red) ${
+          className={`hover:text-(--primary-red) focus-within:text-(--primary-red) ${
             activeTab === "2" && "active"
           }`}
           data-active="2"
         >
-          Speedy Searching
+          <button
+            className="border-none outline-none p-0"
+            onKeyDown={(e) =>
+              [" ", "Enter"].includes(e.key) && setActiveTab("2")
+            }
+          >
+            Speedy Searching
+          </button>
         </li>
         <li
-          className={`hover:text-(--primary-red) ${
+          className={`hover:text-(--primary-red) focus-within:text-(--primary-red) ${
             activeTab === "3" && "active"
           }`}
           data-active="3"
         >
-          Easy Sharing
+          <button
+            className="border-none outline-none p-0"
+            onKeyDown={(e) =>
+              [" ", "Enter"].includes(e.key) && setActiveTab("3")
+            }
+          >
+            Easy Sharing
+          </button>
         </li>
       </ul>
       <FeatureTabs content={content[+activeTab - 1]} />

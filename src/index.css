@@ -34,7 +34,15 @@
   }
 
   button {
-    @apply w-fit py-3 px-2 rounded-md  cursor-pointer border-2 transition-colors duration-500 text-[1rem];
+    @apply w-fit py-3 px-2 rounded-md  cursor-pointer border-2 transition-colors duration-500 text-[1rem] focus:outline-(--accent-color);
+  }
+
+  a {
+    @apply focus:outline-none focus:text-(--primary-red);
+  }
+
+  summary {
+    @apply focus:outline-none focus:text-(--primary-red);
   }
 
   h1,
@@ -63,7 +71,7 @@
   }
 
   .navigation {
-    @apply flex justify-between items-center mb-8;
+    @apply flex justify-between items-center mb-8 pt-2;
   }
 
   .hero {
@@ -75,10 +83,10 @@
   }
 
   .hover-btn {
-    @apply hover:border-(--primary-blue) hover:text-(--primary-blue) hover:bg-(--secondary-bg);
+    @apply hover:border-(--primary-blue) hover:text-(--primary-blue) hover:bg-(--secondary-bg) focus:border-(--primary-blue) focus:text-(--primary-blue) focus:bg-(--secondary-bg) focus:outline-none;
   }
   .action-btn {
-    @apply bg-(--primary-red) text-white border-(--primary-red) hover:text-(--primary-red) hover:bg-(--secondary-bg) w-fit;
+    @apply bg-(--primary-red) text-white border-(--primary-red) hover:text-(--primary-red) hover:bg-(--secondary-bg) focus:text-(--primary-red) focus:bg-(--secondary-bg) md:w-fit focus:outline-none w-full;
   }
 
   .btn-secondary {
@@ -122,7 +130,7 @@
     @apply flex flex-col gap-2 border-y-1 border-y-(--text-color)/40 my-12 md:flex-row md:items-center md:justify-center md:gap-0 md:border-none;
 
     & li {
-      @apply py-4 not-last:border-b-1 border-b-(--text-color)/40 cursor-pointer md:px-8 md:py-6;
+      @apply py-4 not-last:border-b-1 border-b-(--text-color)/40 cursor-pointer md:px-8 md:py-6 md:border-b-1;
     }
   }
 
@@ -139,11 +147,21 @@
     @apply flex flex-col items-center gap-8 p-8 pt-15 shadow-xl w-[18rem] mx-auto rounded-2xl overflow-hidden;
   }
 
+  /* NEWSLETTER */
+
+  .email-field {
+    @apply bg-white px-2 py-3 rounded-md w-fit focus:outline-(--accent-color);
+  }
   /*FOOTER*/
 
   .footer-icon {
-    @apply hover:text-(--primary-red) cursor-pointer text-white 
-        fill-white hover:fill-(--primary-red);
+    @apply hover:text-(--primary-red) cursor-pointer text-white fill-white hover:fill-(--primary-red) focus:text-(--primary-red) focus:fill-(--primary-red) focus:outline-none;
+  }
+
+  /* MOBILE MENU*/
+
+  .mobile-link {
+    @apply py-5 border-t-1 border-t-(--text-color)/70 tracking-[.15em] cursor-pointer;
   }
 }
 
@@ -152,7 +170,7 @@
     @apply w-full h-full;
   }
   .site-padding {
-    @apply px-8 py-5 text-center md:px-20 md:py-12 overflow-x-hidden lg:px-30 lg:py-15 xl:px-40 xl:py-18;
+    @apply px-8 py-5 text-center md:px-20 md:py-12 overflow-x-hidden lg:px-30 lg:py-15 xl:px-40 xl:py-18 xl:pb-0;
   }
   .site-block-margin {
     @apply my-35;

@@ -10,6 +10,7 @@ function FeatureTabs({ content }) {
           <img
             src={`/images/${content.img}`}
             alt="blurred preview of the functionality"
+            className="md:w-full"
           />
         </figure>
       </div>
